@@ -1,0 +1,183 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #333;
+}
+
+
+/* Contenedor principal */
+.contenedor {
+    width: 90%;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #ccc;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Información del examen */
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+/* Pregunta */
+#pregunta {
+    margin-bottom: 20px;
+}
+
+
+/* Opciones */
+#opciones {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.opcion {
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #e2e8f0;
+    color: #222;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.opcion:hover:not(:disabled) {
+    background: #cbd5e1;
+}
+
+
+/* Respuesta correcta */
+.correcta {
+    background: #86efac;
+    color: #166534;
+}
+
+/* Respuesta incorrecta */
+.incorrecta {
+    background: #fca5a5;
+    color: #991b1b;
+}
+
+.opcion:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+
+/* Mensaje */
+#mensaje {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+
+/* Puntaje */
+.puntaje {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Botones */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#siguiente, #reiniciar {
+    margin-top: 15px;
+}
+
+
+/* Resultados */
+#resultado {
+    text-align: center;
+}
+
+#total {
+    color: #2563eb;
+    font-size: 40px;
+    margin: 15px 0 25px;
+}
+
+#revision {
+    margin-top: 20px;
+}
+
+
+/* Tarjetas de revisión */
+.revision {
+    background: #f1f5f9;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.revision p {
+    margin: 7px 0;
+}
+
+.revision.correcta {
+    background: #dcfce7;
+}
+
+.revision.incorrecta {
+    background: #fee2e2;
+}
+
+.revision.sin-responder {
+    background: #fef3c7;
+}
+
+
+/* Ocultar elementos */
+[hidden] {
+    display: none !important;
+}
+
+
+/* Adaptación a celulares */
+@media (max-width: 500px) {
+
+    .contenedor {
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+}

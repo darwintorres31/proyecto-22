@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darwin Acevedo">
+    <title>Quiz - proyecto 22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Quiz: Rápidos y Furiosos</h1>
+
+        <!-- Examen -->
+        <section id="quiz">
+
+            <div class="informacion">
+
+                <p id="contador">Pregunta 1 de 10</p>
+
+                <p>Tiempo: <span id="tiempo">60</span>s</p>
+
+            </div>
+
+            <!-- Pregunta -->
+            <h2 id="pregunta"></h2>
+
+            <!-- Opciones -->
+            <div id="opciones"></div>
+
+            <!-- Mensaje -->
+            <p id="mensaje" aria-live="polite"></p>
+
+            <!-- Puntaje -->
+            <p class="puntaje">
+                Puntaje: <span id="puntaje">0</span>
+            </p>
+
+            <button id="siguiente" hidden>
+                Siguiente
+            </button>
+
+        </section>
+
+
+        <!-- Resultados -->
+        <section id="resultado" hidden>
+
+            <h2>¡Examen terminado!</h2>
+
+            <p>Tu puntaje final es:</p>
+
+            <h2 id="total"></h2>
+
+            <h3>Revisión de respuestas</h3>
+
+            <div id="revision"></div>
+
+            <button id="reiniciar">
+                Volver a intentar
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
